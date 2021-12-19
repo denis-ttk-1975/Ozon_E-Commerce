@@ -1,6 +1,10 @@
 # e-Commerce site based on template E-Store Ozon
 
-Learning
+Important! dont forget to start webpack watcher:
+
+```
+webpack --watch --mode=development
+```
 
 1. JSON place-holder for front-end test - https://jsonplaceholder.typicode.com/
 2. Local JSON server for case if draft of response available https://github.com/typicode/json-server
@@ -120,4 +124,19 @@ For multiple fields, use the following format:
 GET /posts?_sort=user,views&_order=desc,asc
 ```
 
-### 3a Firebase Goodle
+### 3a - Firebase Google
+
+Working with realTime-Database
+
+##### Pay Attention !!!
+
+Here is some difference for fetch request to - .json has to be added at the end of url !!!
+
+```
+return fetch('http://localhost:3000/goods')
+
+return fetch(
+    'https://ozon-e-commerce-default-rtdb.firebaseio.com/goods.json'
+  )
+
+```

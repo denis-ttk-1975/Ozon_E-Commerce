@@ -10,10 +10,10 @@ const second = () => {
     //   console.log(data);
     //   getData().then((data) => console.log(data));
     // });
-    postData().then((data) => {
-      console.log(data);
-      getData().then((data) => console.log(data));
-    });
+    // postData().then((data) => {
+    //   console.log(data);
+    getData().then((data) => console.log(data));
+    // });
   });
 };
 
